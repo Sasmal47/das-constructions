@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAS CONSTRUCTIONS | Building Odisha Since 2015</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --primary: #1E3A8A;
+            --secondary: #DB2777;
+            --accent: #F59E0B;
+            --dark: #1F2937;
+            --light: #F3F4F6;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url("bgp_1.jpg") no-repeat center center/cover;
+            height: 80vh;
+            min-height: 600px;
+        }
+        
+        .odisha-map {
+            position: relative;
+        }
+        
+        .odisha-map::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(30, 58, 138, 0.1);
+            border-radius: 8px;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl md:text-2xl font-bold text-primary logo">
+                    <span class="text-blue-900">DAS</span>
+                    <span class="text-pink-600">CONSTRUCTIONS</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-900 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-900 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-900 font-medium">Services</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-900 font-medium">Projects</a>
+                    
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="block px-3 py-2 rounded bg-gray-100 text-gray-800">Home</a>
+                    <a href="#about" class="block px-3 py-2 rounded hover:bg-gray-100 text-gray-800">About</a>
+                    <a href="#services" class="block px-3 py-2 rounded hover:bg-gray-100 text-gray-800">Services</a>
+                    <a href="#projects" class="block px-3 py-2 rounded hover:bg-gray-100 text-gray-800">Projects</a>
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-white pt-20" id="home">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Building Odisha's Future Since 2015</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Trusted construction partner with 200+ projects across Odisha and 900+ satisfied clients</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">Get Free Quote</a>
+                <a href="#projects" class="bg-white hover:bg-gray-100 text-blue-900 px-6 py-3 rounded-lg font-medium">Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-blue-900 mb-2">200+</div>
+                    <div class="text-gray-600 font-medium">Projects Completed</div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-blue-900 mb-2">900+</div>
+                    <div class="text-gray-600 font-medium">Happy Clients</div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-blue-900 mb-2">9+</div>
+                    <div class="text-gray-600 font-medium">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white" id="about">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="bgp_2.jpg" alt="Construction site in Balasore with workers and heavy machinery" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-900">About DAS CONSTRUCTIONS</h2>
+                    <p class="mb-6 text-gray-700">Established in 2015 in Balasore, Odisha, DAS CONSTRUCTIONS has grown to become one of the most trusted names in the construction industry across the state. With our commitment to quality, timely delivery, and ethical business practices, we've successfully completed over 200 projects and served more than 900 satisfied customers.</p>
+                    
+                    <div class="mb-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-900">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-900">Our Presence Across Odisha</h3>
+                        <img src="bgp_3.png" alt="Map of Odisha with markers showing our construction projects across different districts" class="odisha-map rounded">
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-900 rounded-full p-2 mr-3">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">ISO Certified</h4>
+                                <p class="text-sm text-gray-600">Quality management system certified</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-900 rounded-full p-2 mr-3">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Award Winning</h4>
+                                <p class="text-sm text-gray-600">Best Construction Firm 2022 (Balasore)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50" id="services">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-blue-900">Our Construction Services</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Comprehensive solutions for residential, commercial, and industrial construction needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="bgp_4.jpg" alt="Modern residential building under construction in Bhubaneswar" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Residential Construction</h3>
+                        <p class="text-gray-600 mb-4">From individual homes to apartment complexes, we build quality living spaces across Odisha.</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Individual Villas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Apartment Complexes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Row Houses</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="bgp_5.jpg" alt="Commercial building with glass facade in Cuttack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Commercial Projects</h3>
+                        <p class="text-gray-600 mb-4">Office buildings, retail spaces, and commercial complexes built to last.</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Office Buildings</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Shopping Complexes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Hotels & Restaurants</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="bgp_6.jpg" alt="Industrial warehouse construction site in Rourkela" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Industrial Construction</h3>
+                        <p class="text-gray-600 mb-4">Specialized industrial facilities and warehouses built to your specifications.</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Factory Buildings</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Warehouses</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Industrial Sheds</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-16 bg-white" id="projects">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-blue-900">Our Featured Projects</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Showcasing our best work across Odisha</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="bgp_7.jpg" alt="High-rise residential complex in Bhubaneswar with modern architecture" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Skyline Residency</h3>
+                            <p class="text-gray-200">Bhubaneswar | 2023</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="bgp_8.jpg" alt="Commercial complex in Cuttack with glass and steel facade" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Tech Park Square</h3>
+                            <p class="text-gray-200">Cuttack | 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="bgp_9.jpeg" alt="Luxury villa project in Puri with traditional Odia architectural elements" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Beachside Villas</h3>
+                            <p class="text-gray-200">Puri | 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Client Testimonials</h2>
+                <p class="max-w-2xl mx-auto text-gray-300">What our clients say about our work</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="bgp_10.jpg" alt="Portrait of Mr. Rajesh Patnaik, client from Bhubaneswar" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Rajesh Patnaik</h4>
+                            <p class="text-gray-400">Bhubaneswar</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"DAS CONSTRUCTIONS built our dream home exactly as we envisioned. Their team was professional, transparent with costs, and completed the project ahead of schedule. Highly recommended!"</p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="bgp_11.jpg" alt="Portrait of Mrs. Priyanka Mohanty, commercial client from Cuttack" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Priyanka Mohanty</h4>
+                            <p class="text-gray-400">Cuttack</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"We chose DAS CONSTRUCTIONS for our office building project after evaluating multiple contractors. Their attention to detail and commitment to quality made all the difference. The project was delivered on time and within budget."</p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                
+```
